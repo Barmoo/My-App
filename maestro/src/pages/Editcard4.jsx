@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Editcard4 = () => {
   return (
@@ -78,9 +79,9 @@ const Editcard4 = () => {
 
       {/* Save Button */}
       <div className="px-4 py-4">
-        <button className="w-full bg-black text-white font-semibold py-3">
+        <Link to='/editcard5' className=" block w-full bg-black text-white font-semibold py-3 text-center">
           Save
-        </button>
+        </Link>
       </div>
     </div>
   );

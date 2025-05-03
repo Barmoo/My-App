@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Editcard11 = () => {
+  const navigate = useNavigate();
   const transactions = [
     {
       id: 1,
@@ -99,6 +102,11 @@ const Editcard11 = () => {
             </div>
           </div>
         ))}
+        <button
+          onClick={() => navigate('/editcard12')} // Replace '/next-page' with the actual route
+          className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium">
+          Next <FiArrowRight className="ml-2" />
+          </button>
       </div>
     </div>
   );

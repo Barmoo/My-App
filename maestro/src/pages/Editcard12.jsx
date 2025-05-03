@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Editcard12 = () => {
+  const navigate = useNavigate();
   return (
     <div className="h-screen w-full bg-white flex flex-col">
       {/* Header */}
@@ -67,6 +70,11 @@ const Editcard12 = () => {
             className="w-10 h-10 mb-4 md:mb-0"
           />
           <p className="text-gray-700">**** **** **** 6545</p>
+          <button
+            onClick={() => navigate('/editcard13')} // Replace '/next-page' with the actual route
+            className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium">
+            Next <FiArrowRight className="ml-2" />
+            </button>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Editcard9 = () => {
   return (
@@ -12,9 +13,9 @@ const Editcard9 = () => {
         <button className="w-full bg-yellow-400 text-black font-semibold py-3 mb-4">
           Yes, Delete
         </button>
-        <button className="w-full text-gray-700 font-semibold py-3">
+        <Link to="/editcard10" className="block w-full text-gray-700 font-semibold py-3 text-center">
           Cancel
-        </button>
+        </Link>
       </div>
     </div>
   );
