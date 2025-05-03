@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Onboarding6 = () => {
   return (
@@ -34,9 +35,9 @@ const Onboarding6 = () => {
       </div>
 
       {/* Next Button */}
-      <button className="w-full max-w-md bg-black text-white text-sm font-medium py-3">
+      <Link to="/onboarding12" className="w-full max-w-md bg-black text-white text-sm font-medium py-3">
         Next
-      </button>
+      </Link>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Notification5 = () => {
   return (
@@ -46,9 +47,9 @@ const Notification5 = () => {
       </div>
 
       {/* Request for Pickup Button */}
-      <div className="bg-yellow-500 text-center py-3 text-black font-semibold text-lg cursor-pointer max-w-lg mx-auto w-full mb-4">
+      <Link to="/notification6" className="bg-yellow-500 text-center py-3 text-black font-semibold text-lg cursor-pointer max-w-lg mx-auto w-full mb-4">
         Request for Pickup
-      </div>
+      </Link>
     </div>
   );
 };

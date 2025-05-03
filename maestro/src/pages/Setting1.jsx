@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Setting1 = () => {
   return (
@@ -29,7 +30,7 @@ const Setting1 = () => {
           <button className="text-blue-500 text-sm font-medium mb-4">+ Add location</button>
           <div className="flex items-center">
             <span className="text-black text-lg mr-2">■</span>
-            <p className="text-base">Olebu Ablekuma Kingdom hall</p>
+            <Link to="/setting2" className="text-base">Olebu Ablekuma Kingdom hall</Link>
           </div>
         </div>
       </div>

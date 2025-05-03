@@ -1,46 +1,114 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Onboarding1 = () => {
+  const [code, setCode] = useState(['', '', '', '']);
+  const [error, setError] = useState('');
+  const [resendLoading, setResendLoading] = useState(false);
+  const navigate = useNavigate();
+
+  // Handle input change
+  const handleChange = (e, index) => {
+    const value = e.target.value.replace(/[^0-9]/g, ''); // Allow only digits
+    if (value.length <= 1) {
+      const newCode = [...code];
+      newCode[index] = value;
+      setCode(newCode);
+
+      // Focus next input
+      if (value && index < code.length - 1) {
+        document.getElementById(`digit-${index + 1}`).focus();
+      }
+    }
+  };
+
+  const handleConfirm = async () => {
+    const fullCode = code.join('');
+    if (fullCode.length < 4) {
+      setError('Please enter the full verification code.');
+      return;
+    }
+
+    try {
+      setError('');
+      // Replace with your API call to verify the code
+      const response = await axios.post('https://api.yourdomain.com/verify-code', {
+        code: fullCode,
+        // include any other needed data like phone/email or token
+      });
+
+      if (response.status === 200) {
+        navigate('/dashboard'); // or the next step
+      } else {
+        setError('Invalid code. Please try again.');
+      }
+    } catch (err) {
+      console.error('Verification error:', err.response?.data || err.message);
+      setError('Something went wrong. Please try again.');
+    }
+  };
+
+  const handleResend = async () => {
+    try {
+      setResendLoading(true);
+      // Replace with your API call to resend code
+      await axios.post('/auth/api/v1/users/confirm-account', {
+        // Include any needed params like phone or email
+      });
+      alert('Verification code resent.');
+    } catch (err) {
+      console.error('Resend error:', err.response?.data || err.message);
+      alert('Failed to resend code.');
+    } finally {
+      setResendLoading(false);
+    }
+  };
+
   return (
     <div className="font-sans bg-gray-100 min-h-screen w-full flex flex-col items-center justify-center px-6">
-      {/* Logo */}
-      {/* <div className="mb-6">
-        <img
-          src="https://via.placeholder.com/100x50"
-          alt="Maestro Logo"
-          className="w-24 mx-auto"
-        />
-      </div> */}
-
       {/* Instruction Text */}
       <p className="text-center text-sm text-gray-600">
-        A Verification code has been sent to your
+        A verification code has been sent to your phone number.
       </p>
       <p className="text-center text-sm text-gray-600 mb-6">
-        phone number. Enter code below.
+        Enter the code below.
       </p>
 
       {/* Code Input */}
       <div className="flex justify-center space-x-4 mb-4">
-        {[0, 0, 8, 9].map((digit, index) => (
-          <div
+        {code.map((digit, index) => (
+          <input
             key={index}
-            className="w-12 h-12 bg-gray-200 text-gray-800 text-lg font-medium flex items-center justify-center rounded-md"
-          >
-            {digit}
-          </div>
+            id={`digit-${index}`}
+            type="text"
+            maxLength="1"
+            value={digit}
+            onChange={(e) => handleChange(e, index)}
+            className="w-12 h-12 text-center text-lg font-medium border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
         ))}
       </div>
 
+      {/* Error */}
+      {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+
       {/* Resend Code */}
-      <button className="text-blue-500 text-sm font-medium mb-6">
-        Resend verification code
+      <button
+        onClick={handleResend}
+        disabled={resendLoading}
+        className="text-blue-500 text-sm font-medium mb-6"
+      >
+        {resendLoading ? 'Resending...' : 'Resend verification code'}
       </button>
 
       {/* Confirm Button */}
-      <button className="w-full max-w-md bg-black text-white text-sm font-medium py-3">
-        Confirm
-      </button>
+      <Link to="/onboarding2"
+        onClick={handleConfirm}
+        className="w-full max-w-md bg-black text-white text-sm font-medium py-3"
+      >Confirm
+      </Link>
     </div>
   );
 };

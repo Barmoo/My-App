@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Setting4 = () => {
   return (
@@ -25,9 +26,9 @@ const Setting4 = () => {
       </div>
 
       {/* Save Button */}
-      <button className="bg-black text-white text-base font-medium py-3 px-6 w-full max-w-md">
+      <Link to="/setting5" className="bg-black text-white text-base font-medium py-3 px-6 w-full max-w-md">
         Save
-      </button>
+      </Link>
     </div>
   );
 };

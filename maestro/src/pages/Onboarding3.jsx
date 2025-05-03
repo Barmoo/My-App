@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Onboarding3 = () => {
   return (
@@ -36,9 +37,9 @@ const Onboarding3 = () => {
       </button>
 
       {/* Confirm Button */}
-      <button className="w-full max-w-md bg-black text-white text-sm font-medium py-3">
+      <Link to="/onboarding4" className="w-full max-w-md bg-black text-white text-sm font-medium py-3">
         Confirm
-      </button>
+      </Link>
     </div>
   );
 };

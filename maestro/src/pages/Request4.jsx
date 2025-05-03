@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Request4 = () => {
   return (
@@ -14,9 +15,9 @@ const Request4 = () => {
           <button className="bg-yellow-500 text-black font-medium py-2 shadow-md hover:bg-yellow-600">
             Yes, Delete
           </button>
-          <button className="text-gray-500 font-medium hover:underline">
+          <Link to="/request1" className="text-gray-500 font-medium hover:underline">
             No, go back
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Request3 = () => {
   return (
@@ -51,7 +52,7 @@ const Request3 = () => {
         {/* Action Buttons */}
         <div className="flex justify-between">
           <button className="text-blue-500 text-base">Edit Booking</button>
-          <button className="text-red-500 text-base">Cancel Booking</button>
+          <Link to="/request4" className="text-red-500 text-base">Cancel Booking</Link>
         </div>
       </div>
     </div>

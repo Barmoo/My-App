@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Request1 = () => {
   return (
@@ -111,9 +112,9 @@ const Request1 = () => {
         </div>
         <div className="flex justify-between items-center">
           <p className="text-gray-400">12th August 2020</p>
-          <button className="bg-red-500 text-white px-6 py-2 rounded-full">
+          <Link to="/request3" className="bg-red-500 text-white px-6 py-2 rounded-full">
             No response
-          </button>
+          </Link>
         </div>
       </div>
     </div>

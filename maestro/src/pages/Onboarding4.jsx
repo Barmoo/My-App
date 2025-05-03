@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Onboarding4 = () => {
   return (
@@ -18,6 +19,9 @@ const Onboarding4 = () => {
         <p className="text-sm text-gray-600">
           Your trusted partner for cargo transportation.
         </p>
+        <Link to="/onboarding6" className="w-full max-w-md bg-black text-white text-sm font-medium py-3">
+        Next
+      </Link>
       </div>
     </div>
   );

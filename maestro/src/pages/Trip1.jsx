@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FiArrowRight } from 'react-icons/fi';
+
 
 const Trip1 = () => {
+  const navigate = useNavigate();
   return (
     <div className="font-sans bg-gray-100 min-h-screen w-full p-6 flex flex-col items-center">
       {/* Trip Details Card */}
@@ -72,6 +76,11 @@ const Trip1 = () => {
           {[...Array(2)].map((_, index) => (
             <span key={index} className="text-gray-300 text-lg">★</span>
           ))}
+          <button
+            onClick={() => navigate('/trip2')} // Replace '/next-page' with the actual route
+            className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium">
+            Next <FiArrowRight className="ml-2" />
+          </button>
         </div>
       </div>
     </div>

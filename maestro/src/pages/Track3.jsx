@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Track3 = () => {
   return (
@@ -38,9 +39,9 @@ const Track3 = () => {
         </button>
 
         {/* Report Button */}
-        <button className="w-full text-red-500 text-sm font-medium">
+        <Link to="/track4" className="w-full text-red-500 text-sm font-medium text-center">
           Report
-        </button>
+        </Link>
       </div>
     </div>
   );

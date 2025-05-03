@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Setting6 = () => {
+  const navigate = useNavigate();
   return (
     <div className="font-sans bg-gray-100 min-h-screen w-full p-6 flex flex-col items-center">
       <h2 className="text-sm font-medium text-gray-500 mb-4">Edit Account Details</h2>
@@ -52,6 +55,11 @@ const Setting6 = () => {
           </button>
           <button className="w-full bg-black text-white text-base font-medium px-4 py-2">
             Take photo
+          </button>
+          <button
+            onClick={() => navigate('/setting7')} // Replace '/next-page' with the actual route
+            className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium">
+            Next <FiArrowRight className="ml-2" />
           </button>
         </div>
       </div>

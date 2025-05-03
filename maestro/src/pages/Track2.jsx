@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Track2 = () => {
+  const navigate = useNavigate();
   return (
     <div className="font-sans bg-gray-100 min-h-screen w-full p-6 flex flex-col items-center">
       {/* Card 1 */}
@@ -71,6 +74,11 @@ const Track2 = () => {
         </div>
         <button className="w-full bg-gray-400 text-white text-sm font-medium py-2">
           Awaiting Pickup
+        </button>
+        <button
+          onClick={() => navigate('/track3')} // Replace '/next-page' with the actual route
+          className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium">
+          Next <FiArrowRight className="ml-2" />
         </button>
       </div>
     </div>

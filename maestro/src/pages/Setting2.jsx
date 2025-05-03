@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Setting2 = () => {
   return (
@@ -50,9 +51,9 @@ const Setting2 = () => {
       </div>
 
       {/* Save Button */}
-      <button className="bg-black text-white text-base font-medium py-2 px-42 mt-6 ">
+      <Link to="/setting3" className="bg-black text-white text-base font-medium py-2 px-42 mt-6 ">
         Save
-      </button>
+      </Link>
     </div>
   );
 };

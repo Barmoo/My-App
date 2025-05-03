@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Track1 = () => {
   return (
@@ -58,9 +59,9 @@ const Track1 = () => {
       </div>
 
       {/* Request for Pickup Button */}
-      <button className="bg-yellow-500 text-black text-lg font-medium py-4 w-full mt-4">
+      <Link to="/track2" className="bg-yellow-500 text-black text-lg font-medium py-4 w-full mt-4 text-center">
         Request for Pickup
-      </button>
+      </Link>
     </div>
   );
 };
