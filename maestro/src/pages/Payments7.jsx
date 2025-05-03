@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Payments7 = () => {
   return (
@@ -11,7 +12,7 @@ const Payments7 = () => {
       {/* Select Account */}
       <div className="mt-8 px-4">
         <label className="block text-gray-700 text-sm mb-2">Select account to pay with</label>
-        <div className="flex items-center justify-between bg-gray-100 border border-gray-300 rounded-md px-4 py-3">
+        <div className="flex items-center justify-between bg-gray-100 border border-gray-300 px-4 py-3">
           <div className="flex items-center">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/4/44/Mtn-logo.jpg" // Replace with the actual MTN logo
@@ -26,9 +27,9 @@ const Payments7 = () => {
 
       {/* Pay Button */}
       <div className="absolute bottom-8 left-4 right-4">
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md">
+        <Link to="/pickup1" className=" block w-full bg-yellow-400 text-black font-semibold py-3 text-center shadow-md">
           Pay GHS 4,500
-        </button>
+        </Link>
       </div>
     </div>
   );

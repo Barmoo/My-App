@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Describe2 = () => {
   return (
@@ -40,9 +41,9 @@ const Describe2 = () => {
       {/* Back and Continue Buttons */}
       <div className="flex items-center justify-around mt-48">
         <button className="text-gray-700 text-sm">Back</button>
-        <button className="bg-yellow-400 text-black font-semibold py-2 px-12 shadow-md">
+        <Link to="/describe3" className="bg-yellow-400 text-black font-semibold py-2 px-12 shadow-md">
           Continue
-        </button>
+        </Link>
       </div>
     </div>
   );

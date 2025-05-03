@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCamera } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Describe3 = () => {
   return (
@@ -74,9 +75,9 @@ const Describe3 = () => {
 
       {/* Continue Button */}
       <div>
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3  shadow-md">
+        <Link to="/describe4" className="block w-full bg-yellow-400 text-black font-semibold py-3  shadow-md text-center">
           Continue
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Describe8 = () => {
   return (
@@ -22,9 +23,9 @@ const Describe8 = () => {
         </div>
 
         {/* Button */}
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md">
+        <Link to="/location1" className=" block w-full bg-yellow-400 text-black font-semibold py-3 shadow-md">
           View on map
-        </button>
+        </Link>
       </div>
     </div>
   );

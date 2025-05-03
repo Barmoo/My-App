@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const Describe5 = () => {
   return (
@@ -66,9 +67,9 @@ const Describe5 = () => {
 
         {/* Button */}
         <div className="text-center">
-          <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md">
+          <Link to="/describe6" className="block w-full bg-yellow-400 text-black font-semibold py-3 shadow-md text-center">
             Send Pickup Request
-          </button>
+          </Link>
         </div>
       </div>
     </div>

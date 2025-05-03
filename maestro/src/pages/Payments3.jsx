@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const ConfirmPayment = () => {
   return (
@@ -22,14 +23,14 @@ const ConfirmPayment = () => {
         </div>
 
         {/* View on Map Button */}
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3 rounded-md shadow-md mb-4">
+        <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md mb-4">
           View on map
         </button>
 
         {/* Pay Button */}
-        <button className="w-full border border-yellow-400 text-yellow-400 font-semibold py-3 rounded-md shadow-md">
+        <Link to="/payments4" className=" block w-full border border-yellow-400 text-yellow-400 font-semibold py-3 shadow-md">
           Pay GHS 4,500
-        </button>
+        </Link>
       </div>
     </div>
   );

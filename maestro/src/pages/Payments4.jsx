@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaExclamationTriangle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Payments4 = () => {
   return (
@@ -22,14 +23,14 @@ const Payments4 = () => {
         </div>
 
         {/* Try Again Button */}
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md mb-4 rounded-md">
+        <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md mb-4">
           Please Try Again
         </button>
 
         {/* Dimmed Pay Button */}
-        <button className="w-full bg-gray-400 text-gray-700 font-semibold py-3 shadow-md cursor-not-allowed rounded-md">
+        <Link to="/payments5" className=" block w-full bg-gray-400 text-gray-700 font-semibold py-3 shadow-md cursor-not-allowed">
           Pay GHS 4,500
-        </button>
+        </Link>
       </div>
     </div>
   );

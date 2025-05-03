@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ConfirmPayment = () => {
   return (
@@ -22,9 +23,9 @@ const ConfirmPayment = () => {
         </button>
 
         {/* Cancel Button */}
-        <button className="w-full text-red-500 font-semibold py-3">
+        <Link to="/payments7" className=" block w-full text-red-500 font-semibold py-3">
           Cancel
-        </button>
+        </Link>
       </div>
     </div>
   );

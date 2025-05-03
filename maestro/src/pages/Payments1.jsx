@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaChevronLeft, FaBell } from 'react-icons/fa';
 import { FaCcMastercard } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Payments1 = () => {
   return (
@@ -36,9 +37,9 @@ const Payments1 = () => {
 
       {/* Pay Button */}
       <div className="mt-auto px-4 w-full max-w-md mx-auto">
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md rounded-md">
+        <Link to="/payments2" className=" block w-full bg-yellow-400 text-black font-semibold py-3 shadow-md text-center">
           Pay GHS 4,500
-        </button>
+        </Link>
       </div>
     </div>
   );

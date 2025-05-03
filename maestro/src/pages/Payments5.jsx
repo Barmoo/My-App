@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaExclamationTriangle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Payments5 = () => {
   return (
@@ -22,9 +23,9 @@ const Payments5 = () => {
         </div>
 
         {/* Complete Payment Button */}
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3 rounded-md shadow-md">
+        <Link to="/payments6" className="block w-full bg-yellow-400 text-black font-semibold py-3 shadow-md">
           Complete payment
-        </button>
+        </Link>
       </div>
     </div>
   );

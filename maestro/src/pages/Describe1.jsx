@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Describe1 = () => {
   return (
@@ -73,9 +75,9 @@ const Describe1 = () => {
 
       {/* Continue Button */}
       <div>
-        <button className="w-full bg-yellow-400 text-black font-semibold py-3 shadow-md">
+        <Link to="/describe2" className=" block w-full bg-yellow-400 text-black font-semibold py-3 shadow- text-center">
           Continue
-        </button>
+        </Link>
       </div>
     </div>
   );

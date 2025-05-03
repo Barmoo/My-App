@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Location2 = () => {
+  const navigate = useNavigate();
   return (
     <div className="h-screen w-full relative">
       {/* Map Background */}
@@ -50,6 +53,12 @@ const Location2 = () => {
               <p className="text-blue-500 font-semibold text-sm">Pickup</p>
               <p className="text-gray-700 text-sm">Industrial Area</p>
             </div>
+            <button
+              onClick={() => navigate('/location3')} // Replace '/next-page' with the actual route
+              className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium"
+              > 
+              Next <FiArrowRight className="ml-2" />
+            </button>
           </div>
         </div>
       </div>

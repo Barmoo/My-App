@@ -3,8 +3,11 @@ import Map from "../assets/images/map.png";
 import { BsDot } from "react-icons/bs";
 import { GoSquareFill } from "react-icons/go"; // Ensure the import is correct
 import { BsGeoAltFill } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Pickup2 = () => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
   return (
     <div
       className="h-screen w-full bg-cover bg-center relative"
@@ -36,6 +39,12 @@ const Pickup2 = () => {
             Done
           </button>
         </div>
+        <button
+          onClick={() => navigate('/pickup3')} // Replace '/next-page' with the actual route
+          className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium"
+          > 
+          Next <FiArrowRight className="ml-2" />
+          </button>
       </div>
     </div>
   );
