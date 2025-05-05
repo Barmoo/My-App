@@ -1,4 +1,4 @@
-import { apiClient } from "./config"; 
+// import { apiClient } from "./config"; 
 
 
 
@@ -92,3 +92,4 @@ export const apiSignIn = async (payload) => {
 export const apiProfile = async(payload) => {
     return await apiClient.get('', payload)
 };
+
