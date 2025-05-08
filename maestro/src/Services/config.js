@@ -1,4 +1,4 @@
-// Services/config.js
+// Services/config.js - Centralized API configuration
 import axios from 'axios';
 
 // Default API URLs
