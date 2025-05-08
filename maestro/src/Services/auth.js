@@ -1,3 +1,4 @@
+// Authentication service for Maestro app
 import { apiClient, AUTH_API_URL, handleApiError } from './config';
 
 export const apiSignUp = async (formData) => {
