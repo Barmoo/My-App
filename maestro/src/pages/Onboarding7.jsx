@@ -17,7 +17,10 @@ const Onboarding7 = () => {
 
     try {
       const response = await axios.post('https://api.maestro.africa/auth/api/v1/login', {
-        email: username,
+        clientId : 0,
+        companyId : 0,
+        username: username,
+        fcmToken: 'string',
         password: password,
       });
       if (response.status === 200) {
