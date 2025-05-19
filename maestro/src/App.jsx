@@ -90,7 +90,7 @@ function App() {
 const router = createBrowserRouter([
   { 
     path: '/',
-    element: <Sidebar />,
+    element: <Onboarding7 />,
 
   },
   {
@@ -383,8 +383,8 @@ const router = createBrowserRouter([
     element: <Onboarding6 />,
   },
   {
-    path: '/onboarding7',
-    element: <Onboarding7 />,
+    path: '/sidebar',
+    element: <Sidebar />,
   },
   {
     path: '/onboarding8',
