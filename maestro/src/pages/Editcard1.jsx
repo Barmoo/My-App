@@ -1,12 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IoWifi } from "react-icons/io5";
+import { BsBattery } from "react-icons/bs";
+import { GiNetworkBars } from "react-icons/gi";
 
 const Editcard1 = () => {
   return (
-    <div className="h-screen w-full bg-white flex flex-col">
+    <div className="h-screen w-full bg-white flex flex-col relative">
       {/* Header */}
-      <div className="text-center py-4 border-b border-gray-300 bg-black text-white">
+      <div className="text-center py-4 border-b border-gray-300 bg-black text-white relative">
         <h2 className="text-lg font-semibold">Payment</h2>
+
+        {/* Icons at the top-left corner */}
+        <div className="absolute top-2 right-2 flex space-x-2">
+          <GiNetworkBars />
+          <IoWifi />
+          <BsBattery />
+        </div>
       </div>
 
       {/* Tabs */}
@@ -58,7 +68,7 @@ const Editcard1 = () => {
 
       {/* Save Button */}
       <div className="px-4 py-4">
-        <Link to="/editcard2" className=" block w-full bg-black text-white font-semibold py-3 text-center">
+        <Link to="/editcard2" className="block w-full bg-black text-white font-semibold py-3 text-center">
           Save
         </Link>
       </div>

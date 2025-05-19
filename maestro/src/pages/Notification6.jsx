@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const Notification6 = () => {
   return (
+    <>
+    <Navbar />
     <div className="bg-gray-100 h-screen w-full flex flex-col">
       {/* Notifications Section */}
       <div className="bg-white mt-4 p-4 shadow-md max-w-full mx-4">
@@ -55,10 +58,11 @@ const Notification6 = () => {
       </div>
 
       {/* Request for Pickup Button */}
-      <Link to="/notification7" className="bg-yellow-500 text-center py-3 text-black font-semibold text-lg cursor-pointer max-w-lg mx-auto mb-4 w-full">
+      <Link to="/notification7" className="bg-yellow-500 text-center py-3 text-black font-semibold text-lg cursor-pointer mx-auto mb-4 w-full">
         Request for Pickup
       </Link>
     </div>
+    </>
   );
 };
 

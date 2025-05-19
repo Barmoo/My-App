@@ -1,7 +1,7 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import Sidebar from './components/sidebar'
+import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'  
 import Pickup1 from './pages/Pickup1'
 import Pickup2 from './pages/Pickup2'

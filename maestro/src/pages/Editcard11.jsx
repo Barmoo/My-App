@@ -1,6 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
+import { GiNetworkBars } from 'react-icons/gi';
+import { IoWifi } from 'react-icons/io5';
+import { BsBattery } from 'react-icons/bs';
 
 const Editcard11 = () => {
   const navigate = useNavigate();
@@ -53,10 +56,17 @@ const Editcard11 = () => {
   ];
 
   return (
-    <div className="h-screen w-full bg-white flex flex-col">
-      {/* Header */}
-      <div className="text-center py-4 border-b border-gray-300 bg-black text-white">
+    <div className="h-screen w-full bg-white flex flex-col relative">
+      {/* Navbar */}
+      <div className="text-center py-4 border-b border-gray-300 bg-black text-white relative">
         <h2 className="text-lg font-semibold">Payment</h2>
+
+        {/* Icons at the top-left corner */}
+        <div className="absolute top-2 right-2 flex space-x-2">
+          <GiNetworkBars />
+          <IoWifi />
+          <BsBattery />
+        </div>
       </div>
 
       {/* Tabs */}
@@ -106,7 +116,7 @@ const Editcard11 = () => {
           onClick={() => navigate('/editcard12')} // Replace '/next-page' with the actual route
           className="mt-8 flex items-center justify-center text-blue-500 text-lg font-medium">
           Next <FiArrowRight className="ml-2" />
-          </button>
+        </button>
       </div>
     </div>
   );

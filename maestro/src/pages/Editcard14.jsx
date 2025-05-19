@@ -1,14 +1,26 @@
 import React from 'react';
+import { GiNetworkBars } from 'react-icons/gi';
+import { IoWifi } from 'react-icons/io5';
+import { BsBattery } from 'react-icons/bs';
 
 const Editcard14 = () => {
   return (
-    <div className="h-screen w-full bg-gray-100 flex items-center justify-center px-4">
-      <div className="bg-white w-full max-w-2xl p-6 rounded-lg shadow-md">
+    <div className="h-screen w-full bg-gray-100 flex flex-col">
+      <div className="bg-white w-full  p-6 rounded-lg shadow-md">
         {/* Header */}
-        <div className="flex items-center justify-between bg-black text-white px-4 py-2">
-          <button className="text-lg">←</button>
-          <h2 className="text-lg font-semibold">Transaction details</h2>
-          <button className="text-lg">🔔</button>
+        <div className="relative bg-black text-white px-4 py-4">
+          {/* Icons at the top */}
+          <div className="absolute top-2 right-2 flex space-x-2">
+            <GiNetworkBars className="text-lg" />
+            <IoWifi className="text-lg" />
+            <BsBattery className="text-lg" />
+          </div>
+
+          {/* Title and Bell Icon */}
+          <div className="text-center justify-between text-white relative">
+            <h2 className="text-lg font-semibold">Transaction details</h2>
+            <button className=" top-6 right-2">🔔</button>
+          </div>
         </div>
 
         {/* Buttons */}

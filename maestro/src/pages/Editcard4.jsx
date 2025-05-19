@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { IoWifi } from "react-icons/io5";
+import { BsBattery } from "react-icons/bs";
+import { GiNetworkBars } from "react-icons/gi";
 const Editcard4 = () => {
   return (
     <div className="h-screen w-full bg-white flex flex-col">
       {/* Header */}
       <div className="text-center py-4 border-b border-gray-300 bg-black text-white">
         <h2 className="text-lg font-semibold">Payment</h2>
+        <div className="absolute top-2 right-2 flex space-x-2">
+          <GiNetworkBars />
+          <IoWifi />
+          <BsBattery />
+        </div>
       </div>
 
       {/* Tabs */}

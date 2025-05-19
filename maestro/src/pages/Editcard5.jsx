@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IoWifi } from "react-icons/io5";
+import { BsBattery } from "react-icons/bs";
+import { GiNetworkBars } from "react-icons/gi";
 
 const Editcard5 = () => {
   return (
@@ -7,6 +10,11 @@ const Editcard5 = () => {
       {/* Header */}
       <div className="text-center py-4 border-b border-gray-300 bg-black text-white">
         <h2 className="text-lg font-semibold">Payment</h2>
+        <div className="absolute top-2 right-2 flex space-x-2">
+          <GiNetworkBars className="text-white" />
+          <IoWifi className="text-white" />
+          <BsBattery className="text-white" />
+        </div>
       </div>
 
       {/* Tabs */}

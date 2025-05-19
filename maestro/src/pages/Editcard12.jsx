@@ -1,6 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
+import { GiNetworkBars } from 'react-icons/gi';
+import { IoWifi } from 'react-icons/io5';
+import { BsBattery } from 'react-icons/bs';
+
 
 const Editcard12 = () => {
   const navigate = useNavigate();
@@ -9,6 +13,11 @@ const Editcard12 = () => {
       {/* Header */}
       <div className="text-center py-4 border-b border-gray-300 bg-black text-white">
         <h2 className="text-lg font-semibold">Transaction details</h2>
+        <div className="absolute top-2 right-2 flex space-x-2">
+          <GiNetworkBars />
+          <IoWifi />
+          <BsBattery />
+        </div>
       </div>
 
       {/* Tabs */}
