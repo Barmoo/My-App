@@ -1,5 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom';
+import { IoWifi } from "react-icons/io5";
+import { BsBattery } from "react-icons/bs";
+import { GiNetworkBars } from "react-icons/gi";  
 
 const Request1 = () => {
   return (
@@ -10,8 +13,13 @@ const Request1 = () => {
         <h2 className="text-lg font-semibold">Your Requests</h2>
         <button className="text-lg relative">
           🔔
-          <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-3 h-3 flex items-center justify-center"></span>
+          <span className="absolute top-2 right-0 bg-red-500 text-white text-xs rounded-full w-3 h-3 flex items-center justify-center"></span>
         </button>
+        <div className="absolute top-0 right-2 flex space-x-2">
+          <GiNetworkBars />
+          <IoWifi />
+          <BsBattery />
+        </div>
       </div>
 
       {/* Tabs */}
