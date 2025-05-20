@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import passport from '../assets/images/passport.png';
 
 const Notification6 = () => {
   return (
@@ -15,14 +16,14 @@ const Notification6 = () => {
         </div>
         <div className="flex items-center mb-4">
           <img
-            src="/path-to-user-image.png"
+            src={passport}
             alt="User"
             className="w-10 h-10 rounded-full mr-4"
           />
           <div>
             <h3 className="font-semibold">Quotation updated</h3>
             <p className="text-gray-600 text-sm">
-              Yaw Fosu has updated the quote for your request
+              Bella Armoo has updated the quote for your request
             </p>
             <p className="text-gray-400 text-xs mt-1">20 mins ago</p>
           </div>

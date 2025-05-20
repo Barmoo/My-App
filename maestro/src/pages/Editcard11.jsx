@@ -4,6 +4,9 @@ import { FiArrowRight } from 'react-icons/fi';
 import { GiNetworkBars } from 'react-icons/gi';
 import { IoWifi } from 'react-icons/io5';
 import { BsBattery } from 'react-icons/bs';
+import mtn from '../assets/images/mtn.jpg';
+import vodafone from '../assets/images/voda.png';
+import airtel from '../assets/images/airtel.png';
 
 const Editcard11 = () => {
   const navigate = useNavigate();
@@ -15,7 +18,7 @@ const Editcard11 = () => {
       amount: 'GHS 145.00',
       status: 'Success',
       statusColor: 'text-green-500',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Mtn-logo.jpg',
+      logo: mtn,
     },
     {
       id: 2,
@@ -24,7 +27,7 @@ const Editcard11 = () => {
       amount: 'GHS 145.00',
       status: 'Success',
       statusColor: 'text-green-500',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Vodafone-Logo.png',
+      logo: vodafone,
     },
     {
       id: 3,
@@ -51,7 +54,7 @@ const Editcard11 = () => {
       amount: 'GHS 145.00',
       status: 'Fail',
       statusColor: 'text-red-500',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Airtel-logo.png',
+      logo: airtel,
     },
   ];
 
@@ -71,10 +74,10 @@ const Editcard11 = () => {
 
       {/* Tabs */}
       <div className="flex justify-center mt-4 space-x-4 px-4">
-        <button className="px-14 py-2 border border-gray-300 font-semibold">
+        <button className="w-1/2 px-2 py-2 border border-gray-300 font-semibold rounded-sm">
           Edit details
         </button>
-        <button className="px-14 py-2 bg-black text-white font-semibold">
+        <button className="w-1/2 px-2 py-2 bg-black text-white font-semibold rounded-sm">
           History
         </button>
       </div>

@@ -20,10 +20,10 @@ const Editcard2 = () => {
         </div>
       {/* Tabs */}
       <div className="flex justify-center mt-4 ">
-        <button className="px-30 py-2 bg-black text-white font-semibold">
+        <button className="w-1/2 px-6 py-2 bg-black text-white font- semibold rounded-sm">
           Edit details
         </button>
-        <button className="px-30 py-2 border border-gray-300 font-semibold">
+        <button className="w-1/2 px-6 py-2 border border-gray-300 font-semibold rounded-sm">
           History
         </button>
       </div>

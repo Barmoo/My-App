@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { IoWifi } from "react-icons/io5";
 import { BsBattery } from "react-icons/bs";
 import { GiNetworkBars } from "react-icons/gi";
+import mastercard from '../assets/images/mastercard.png'; // Replace with your Mastercard logo path
 
 const Editcard5 = () => {
   return (
@@ -19,10 +20,10 @@ const Editcard5 = () => {
 
       {/* Tabs */}
       <div className="flex justify-center mt-4 space-x-4 px-4">
-        <button className="px-14 py-2 bg-black text-white font-semibold">
+        <button className="w-1/2 px-2 py-2 bg-black text-white font-semibold rounded-sm">
           Edit details
         </button>
-        <button className="px-14 py-2 border border-gray-300 font-semibold">
+        <button className="w-1/2 px-2 py-2 border border-gray-300 font-semibold rounded-sm">
           History
         </button>
       </div>
@@ -40,7 +41,7 @@ const Editcard5 = () => {
         <div className="flex items-center justify-between bg-gray-100 border border-gray-300 px-4 py-3">
           <div className="flex items-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" // Replace with Mastercard logo
+              src={mastercard}
               alt="Mastercard"
               className="w-8 h-8 mr-3"
             />

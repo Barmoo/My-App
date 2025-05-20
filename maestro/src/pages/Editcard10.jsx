@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { IoWifi } from "react-icons/io5";
 import { BsBattery } from "react-icons/bs";
 import { GiNetworkBars } from "react-icons/gi";
+import mastercard from '../assets/images/mastercard.png';
 const EditCard10 = () => {
   return (
     <div className="h-screen w-full bg-white flex flex-col">
@@ -18,10 +19,10 @@ const EditCard10 = () => {
 
       {/* Tabs */}
       <div className="flex justify-center mt-4 space-x-4 px-4">
-        <button className="px-14 py-2 bg-black text-white font-semibold">
+        <button className="w-1/2 px-2 py-2 bg-black text-white font-semibold rounded-sm">
           Edit details
         </button>
-        <button className="px-14 py-2 border border-gray-300 font-semibold">
+        <button className="w-1/2 px-2 py-2 border border-gray-300 font-semibold rounded-sm">
           History
         </button>
       </div>
@@ -61,7 +62,7 @@ const EditCard10 = () => {
               readOnly
             />
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" // Replace with Mastercard logo
+              src={mastercard}
               alt="Mastercard"
               className="absolute right-4 top-3 w-8 h-8"
             />

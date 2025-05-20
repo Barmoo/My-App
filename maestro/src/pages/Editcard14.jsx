@@ -2,6 +2,7 @@ import React from 'react';
 import { GiNetworkBars } from 'react-icons/gi';
 import { IoWifi } from 'react-icons/io5';
 import { BsBattery } from 'react-icons/bs';
+import mastercard from '../assets/images/mastercard.png';
 
 const Editcard14 = () => {
   return (
@@ -25,10 +26,10 @@ const Editcard14 = () => {
 
         {/* Buttons */}
         <div className="flex justify-between mt-4 space-x-2">
-          <button className="flex-1 py-2 border border-black text-sm font-medium">
+          <button className="w-1/2 py-2 border border-black text-sm font-medium rounded-sm">
             Edit details
           </button>
-          <button className="flex-1 py-2 border border-black text-sm font-medium bg-black text-white">
+          <button className="w-1/2 py-2 border border-black text-sm font-medium bg-black text-white rounded-sm">
             History
           </button>
         </div>
@@ -80,7 +81,7 @@ const Editcard14 = () => {
           <h3 className="text-sm text-gray-400 mb-2">Sent from</h3>
           <div className="flex justify-between items-center py-2">
             <img
-              src="/path-to-gh-logo.png"
+              src={mastercard}
               alt="GH Logo"
               className="w-6 h-6"
             />

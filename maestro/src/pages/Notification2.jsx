@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
+import passport from '../assets/images/passport.png'; // Ensure the path is correct
 
 const Notification2 = () => {
   return (
@@ -9,21 +10,21 @@ const Notification2 = () => {
 
     <div className="bg-gray-100 h-screen w-full flex flex-col">
       {/* Notifications Section */}
-      <div className="bg-white mx-4 mt-4 p-4 shadow-md max-w-lg">
+      <div className="bg-white mx-4 mt-4 p-4 shadow-md w-full">
         <div className="flex justify-between items-center mb-2">
           <h2 className="text-lg font-semibold">Notifications</h2>
           <button className="text-blue-500 text-sm">Mark all as read</button>
         </div>
         <div className="flex items-center mb-4">
           <img
-            src="/path-to-user-image.png"
+            src={passport}
             alt="User"
             className="w-10 h-10 rounded-full mr-4"
           />
           <div>
             <h3 className="font-semibold">New quotation received</h3>
             <p className="text-gray-600 text-sm">
-              Yaw Fosu has sent a quote for your request
+              Bella Armoo has sent a quote for your request
             </p>
             <p className="text-gray-400 text-xs mt-1">20 mins ago</p>
           </div>
@@ -41,7 +42,7 @@ const Notification2 = () => {
       {/* Map Section */}
       <div className="relative flex-1 mt-4 max-w-lg mx-auto">
         <img
-          src="/path-to-map-image.png"
+          src=""
           alt="Map"
           className="w-full h-full object-cover rounded-lg"
         />

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { IoWifi } from "react-icons/io5";
 import { BsBattery } from "react-icons/bs";
 import { GiNetworkBars } from "react-icons/gi";
+import mtn from '../assets/images/mtn.jpg';
+import vodafone from '../assets/images/voda.png';
 
 const Editcard1 = () => {
   return (
@@ -21,10 +23,10 @@ const Editcard1 = () => {
 
       {/* Tabs */}
       <div className="flex justify-center mt-4 space-x-4">
-        <button className="px-8 py-2 bg-black text-white font-semibold">
+        <button className="w-1/2 px-6 py-2 bg-black text-white font-semibold rounded-sm">
           Edit details
         </button>
-        <button className="px-8 py-2 border border-gray-300 font-semibold">
+        <button className="w-1/2 px-6 py-2 border border-gray-300 font-semibold rounded-sm">
           History
         </button>
       </div>
@@ -43,7 +45,7 @@ const Editcard1 = () => {
           <div className="flex items-center">
             <input type="radio" name="account" className="mr-4" />
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/44/Mtn-logo.jpg" // Replace with MTN logo
+              src={mtn}
               alt="MTN"
               className="w-8 h-8 mr-3"
             />
@@ -56,7 +58,7 @@ const Editcard1 = () => {
           <div className="flex items-center">
             <input type="radio" name="account" className="mr-4" />
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Vodafone-icon.png" // Replace with Vodafone logo
+              src={vodafone} // Replace with Vodafone logo
               alt="Vodafone"
               className="w-8 h-8 mr-3"
             />

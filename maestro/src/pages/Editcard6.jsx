@@ -18,10 +18,10 @@ const Editcard6 = () => {
 
       {/* Tabs */}
       <div className="flex justify-center mt-4 space-x-4 px-4">
-        <button className="px-14 py-2 bg-black text-white font-semibold">
+        <button className="w-1/2 px-2 py-2 bg-black text-white font-semibold rounded-sm">
           Edit details
         </button>
-        <button className="px-14 py-2 border border-gray-300 font-semibold">
+        <button className="w-1/2 px-2 py-2 border border-gray-300 font-semibold rounded-sm">
           History
         </button>
       </div>

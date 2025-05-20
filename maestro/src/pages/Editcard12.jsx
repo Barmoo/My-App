@@ -4,6 +4,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import { GiNetworkBars } from 'react-icons/gi';
 import { IoWifi } from 'react-icons/io5';
 import { BsBattery } from 'react-icons/bs';
+import mastercard from '../assets/images/mastercard.png';
 
 
 const Editcard12 = () => {
@@ -74,7 +75,7 @@ const Editcard12 = () => {
         <p className="text-gray-500 text-sm mb-4">Sent from</p>
         <div className="flex flex-col md:flex-row md:justify-between items-center">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" // Replace with Mastercard logo
+            src={mastercard}
             alt="Mastercard"
             className="w-10 h-10 mb-4 md:mb-0"
           />
