@@ -75,7 +75,7 @@ import Onboarding4 from './pages/Onboarding4'
 import Onboarding5 from './pages/Onboarding5'
 import Onboarding6 from './pages/Onboarding6'
 import Onboarding7 from './pages/Onboarding7'
-import SignUp from './pages/SignUp'
+import SignUp from './pages/Onboarding8'
 import Onboarding9 from './pages/Onboarding9'
 import Onboarding10 from './pages/Onboarding10'
 import Onboarding11 from './pages/Onboarding11'
@@ -91,7 +91,14 @@ const router = createBrowserRouter([
   { 
     path: '/',
     element: <Onboarding7 />,
-
+  },
+  {
+    path: '/signup',
+    element: <SignUp />,
+  },
+  {
+    path: '/sidebar',
+    element: <Sidebar />,
   },
   {
     path: '/navbar',
@@ -381,14 +388,6 @@ const router = createBrowserRouter([
   {
     path: '/onboarding6',
     element: <Onboarding6 />,
-  },
-  {
-    path: '/sidebar',
-    element: <Sidebar />,
-  },
-  {
-    path: '/signUp',
-    element: <SignUp />,
   },
   {
     path: '/onboarding9',
