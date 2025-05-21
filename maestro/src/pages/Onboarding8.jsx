@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { apiSignUp } from '../Services/auth';
 
-const Onboarding8 = () => {
+const SignUp = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -131,4 +131,4 @@ const Onboarding8 = () => {
   );
 };
 
-export default Onboarding8;
+export default SignUp;
